@@ -1,0 +1,141 @@
+body {
+  background: rgb(8, 51, 95);
+  background: linear-gradient(
+    315deg,
+    rgba(8, 51, 95, 1) 0%,
+    rgba(6, 78, 144, 1) 57%,
+    rgba(32, 113, 130, 1) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+}
+
+h1 {
+  grid-column: 2/2;
+  font-family: "Playfair Display";
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 70px 0;
+  width: 100%;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  text-align: left;
+  color: #ffffff;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  padding: 0.2em 0.8em;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  background-image: url(img/banner-background.jpg);
+  height: 200px;
+  background-position: center;
+}
+
+.topnav {
+  width: 100%;
+  background-color: #064e90;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  background-color: #064e90;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: rgba(171, 195, 206, 1);
+  color: black;
+  cursor: pointer;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 10px;
+}
+
+#aboutMeContainer {
+  display: grid;
+  align-items: normal;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+#aboutMeContainer img {
+  width: 160px;
+  max-width: 100%;
+  max-height: 100%;
+  justify-self: center;
+  grid-area: 1 / 3;
+  border-radius: 50px;
+  padding-top: 5px;
+}
+
+#aboutMeContainer p {
+  align-self: center;
+  grid-area: 1 / 1 / span 1 / span 2;
+  font-size: 20px;
+}
+
+p {
+  padding: 10px;
+  margin-left: 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+li {
+  color: #d4e6ed;
+  font-size: 17px;
+  margin-left: 40px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  list-style-type: circle;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #08335f;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+a {
+  color: #ffffff;
+  border-radius: 0px;
+}
+
+a:hover {
+  cursor: pointer;
+}
