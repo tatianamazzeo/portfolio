@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="styles1.css" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+  </style>
   <title>Tatiana Mazzeo</title>
 </head>
 
@@ -32,7 +34,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aboutMeContainer">About me</a>
+            <a class="nav-link" href="#aboutMe">About me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#workExperience">Work experience</a>
@@ -40,15 +42,13 @@
           <li class="nav-item"></li>
           <a class="nav-link" href="#education">Education</a>
           </li>
-          <li class="nav-item"></li>
-          <a class="nav-link" href="files/CV_TATIANA_MAZZEO.pdf">Curriculum Vitae</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
+  <br>
   <div class="container">
-    <div class="container">
+    <div class="container" id="aboutMe">
       <h2 class="display-2">About Me</h2>
       <div class="row">
         <div class="col-md-6 column">
@@ -65,19 +65,16 @@
         </div>
       </div>
     </div>
-    <hr>
     <div class="container">
-      <h2 class="display-2">Work experience</h2>
+      <h2 class="display-2" id="workExperience">Work experience</h2>
       <h3>Project Manager - Puesto actual</h3>
-      Punto de contacto entre la empresa y los clientes a las que les brindamos nuestra solución, asegurando la
-      comunicación efectiva y la satisfacción del cliente.
+      Point of contact between the company and the customers to whom we provide our solution, ensuring effective
+      communication and customer satisfaction.
       <br>
-      Gestión, monitoreo y planificación de operaciones a cargo mediante la
-      comunicación con otros departamentos de la empresa, asegurando la
-      satisfacción de las necesidades y requerimientos planteados por el
-      cliente.
+      Management, monitoring and planning of operations in charge through communication with other departments of the
+      company, ensuring the satisfaction of the needs and requirements raised by the client.
       <br>
-      Identificación y resolución de problemas planteados por los clientes.
+      Identification and resolution of problems raised by customers.
     </div>
     <br>
     <div class="container">
@@ -114,52 +111,57 @@
       </div>
     </div>
     <br>
-    <hr>
     <div class="container">
-      <h2 class="display-2">Education</h2>
+      <h2 class="display-2" id="education">Education</h2>
       <div class="card-group">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">English Teacher</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut
-              aliquip ex ea commodo consequat.</p>
+            <p class="card-text">
+              Teaching English language and culture to students of various ages and levels.
+              <br>
+              Developing and implementing engaging lesson plans to foster language acquisition and cultural
+              understanding.
+              <br>
+              Collaborating with colleagues to create a positive and supportive learning environment.
+            </p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Jovenes a Programar</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut
-              aliquip ex ea commodo consequat.</p>
+            <p class="card-text">
+              HTML: web page structure and content creation.<br>
+              CSS: styling web elements, applying layouts, and creating visually appealing
+              interfaces.<br>
+              JavaScript: scripting dynamic web interactions, handling user input, and building
+              interactive components.
+            </p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">First Certificate
             </h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut
-              aliquip ex ea commodo consequat.</p>
+            <p class="card-text">
+              Level: Upper-intermediate (B2)<br>
+              Purpose: Demonstrates proficiency in English for academic and professional settings.<br>
+              Focus: Reading, writing, listening, and speaking skills.<br>
+              Issued by: Cambridge Assessment English.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-  <br><br><br><br>
+  <br>
   <footer>
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       <img id="email" src="img/gmail.png" />
-      <a href="mailto:mazzeotatiana6@gmail.com">mazzeotatiana6@gmail.com</a>
+      <a id="pie" href="mailto:mazzeotatiana6@gmail.com">mazzeotatiana6@gmail.com</a>
       <img id="linkedin" src="img/linkedin.png" />
-      <a href="https://www.linkedin.com/in/tatiana-mazzeo-880595237/">Tatiana Mazzeo</a>
+      <a id="pie" href="https://www.linkedin.com/in/tatiana-mazzeo-880595237/">Tatiana Mazzeo</a>
     </div>
   </footer>
 
