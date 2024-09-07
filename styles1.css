@@ -1,23 +1,38 @@
 #title {
   color: white;
-  margin: auto
+  margin: 20px;
+  text-align: center;
+  font-family: 'Allan';
+}
+
+.display-2 {
+  color: #880D1E;
+  font-family: 'Allan';
 }
 
 .header {
   display: grid;
   margin: auto;
-  background: #2A363B;
+  background: #880D1E;
   background-position: center;
 }
 
+#aboutMe {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: white;
+  background-color: #F8F9FA;
+  padding: 50px;
+}
+
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
   margin-bottom: 5px;
-  background-color: #2A363B;
+  background-color: #880D1E;
 }
 
 .img-responsive {
@@ -43,11 +58,16 @@ footer {
   max-height: 25px;
 }
 
+#pie {
+  color: white;
+}
+
 a:hover {
   cursor: pointer;
 }
 
-/* * {
+/* 
+* {
   border-color: red;
   border-style: solid;
 } */
