@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact form</title>
-    <!-- <link rel="stylesheet" href="reset.css" /> -->
     <link rel="stylesheet" href="css/styles1.css" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap");
     </style>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="header">
-        <h1 class="display-1" id="title">Hi, I'm Tatiana!</h1>
-    </div>
+  <div class="header">
+    <h1 class="display-1" id="title">Hi, I'm Tatiana!</h1>
+  </div>
 
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Work experience</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="/index.html">Education</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br>
-
-
-        <div class="container">
-            <h2 class="display-2">Contact me!</h2>
-            <form id="form">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name*</label>
-                    <input type="text" class="form-control" id="name" name="firstname" placeholder="Your name..."
-                        required autocomplete="on">
-
-                    <label for="correo" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com"
-                        required autocomplete="on">
-
-                    <label for="number" class="form-label">Number*</label>
-                    <input type="number" class="form-control" id="number" name="number" placeholder="0800"
-                        autocomplete="on">
-
-                    <label for="subject" class="form-label">Subject*</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
-                        class="form-control" required></textarea>
-                    <br>
-                    <input type="submit" value="Submit" class="btn btn-primary" id="submit">
-                </div>
-            </form>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Work experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        <br>
-        <footer>
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <img id="email" src="img/gmail.png" />
-                <a id="pie" href="mailto:mazzeotatiana6@gmail.com">mazzeotatiana6@gmail.com</a>
-                <img id="linkedin" src="img/linkedin.png" />
-                <a id="pie" href="https://www.linkedin.com/in/tatiana-mazzeo-880595237/">Tatiana Mazzeo</a>
-            </div>
-        </footer>
-    </body>
+      </div>
+    </nav>
+    <br />
 
+    <div class="container">
+      <h2 class="display-2">Contact me!</h2>
+      <form id="form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="firstname"
+            placeholder="Your name..."
+            required
+            autocomplete="on"
+          />
+
+          <label for="correo" class="form-label">Email*</label>
+          <input
+            type="email"
+            class="form-control"
+            id="correo"
+            name="correo"
+            placeholder="name@example.com"
+            required
+            autocomplete="on"
+          />
+
+          <label for="number" class="form-label">Number*</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number"
+            name="number"
+            placeholder="0800"
+            autocomplete="on"
+          />
+
+          <label for="subject" class="form-label">Subject*</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+            class="form-control"
+            required
+          ></textarea>
+          <br />
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-primary"
+            id="submit"
+          />
+        </div>
+      </form>
+    </div>
+    <br />
+    <footer>
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        <img id="email" src="img/gmail.png" />
+        <a id="pie" href="mailto:mazzeotatiana6@gmail.com"
+          >mazzeotatiana6@gmail.com</a
+        >
+        <img id="linkedin" src="img/linkedin.png" />
+        <a id="pie" href="https://www.linkedin.com/in/tatiana-mazzeo-880595237/"
+          >Tatiana Mazzeo</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
