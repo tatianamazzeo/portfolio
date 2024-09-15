@@ -66,6 +66,11 @@ a:hover {
   cursor: pointer;
 }
 
+#submitForm {
+  background-color: #880D1E;
+  border-color: white;
+}
+
 /* 
 * {
   border-color: red;
