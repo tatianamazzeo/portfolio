@@ -68,21 +68,21 @@ addEventListener("DOMContentLoaded", () => {
       // Se crea un objeto FormData con los datos del formulario.
       let requestBody = new FormData(form);
 
-      // Función para mostrar el modal de éxito
-      function showSuccessModal() {
-        var successModal = new bootstrap.Modal(
-          document.getElementById("successModal")
+      // Función para mostrar el toast de éxito
+      function showSuccessToast() {
+        var successToast = new bootstrap.Toast(
+          document.getElementById("successToast")
         );
-        successModal.show();
+        successToast.show();
       }
 
-      // Función para mostrar el modal de error con mensaje dinámico
-      function showErrorModal(errorMessage) {
-        var errorModal = new bootstrap.Modal(
-          document.getElementById("errorModal")
+      // Función para mostrar el toast de error con mensaje dinámico
+      function showErrorToast(errorMessage) {
+        var errorToast = new bootstrap.Toast(
+          document.getElementById("errorToast")
         );
-        document.getElementById("errorModalBody").innerText = errorMessage;
-        errorModal.show();
+        document.getElementById("errorToastBody").innerText = errorMessage;
+        errorToast.show();
       }
 
       // Se utiliza 'fetch' para enviar los datos del formulario al 'scriptURL' mediante el método POST.
@@ -90,14 +90,14 @@ addEventListener("DOMContentLoaded", () => {
         // Si la solicitud es exitosa, se muestra una alerta con el mensaje 'Success!'
         // y se habilita el botón de envío nuevamente.
         .then((response) => {
-          showSuccessModal(); // Mostrar modal de éxito
+          showSuccessToast(); // Mostrar toast de éxito
           submitButton.disabled = false;
           form.reset();
         })
         // Si ocurre un error durante la solicitud, se muestra una alerta con el mensaje 'Error!'
         // y se habilita el botón de envío nuevamente.
         .catch((error) => {
-          cshowErrorModal("Error! " + error.message); // Mostrar modal de error
+          showErrorToast("Error! " + error.message); // Mostrar toast de error
           submitButton.disabled = false;
         });
     });
