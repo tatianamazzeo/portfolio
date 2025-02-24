@@ -23,14 +23,6 @@
   background-position: center;
 }
 
-#aboutMe {
-  border-style: solid;
-  border-radius: 10px;
-  border-color: var(--contrast-color);
-  background-color: var(--contrast-color);
-  padding: 50px;
-}
-
 footer {
   position: relative;
   width: 100%;
@@ -44,15 +36,6 @@ footer {
   justify-content: center;
 }
 
-#email,
-#linkedin {
-  max-width: 25px;
-  max-height: 25px;
-}
-
-#pie {
-  color: var(--contrast-color);
-}
 
 a:hover {
   cursor: pointer;
